@@ -1,0 +1,7 @@
+{
+  "id": "install_vproxy",
+  "title": "Install Vproxy",
+  "description": "Downloads and installs vproxy high-performance HTTP/HTTPS/SOCKS5 proxy server listening on node main IPv4:1080 as a system service.",
+  "category": "Services",
+  "weight": 60
+}

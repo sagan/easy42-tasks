@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sagan/easy42/refs/heads/master/docs/schemas/task-repository-manifest.json",
+  "name": "Easy42 Community Tasks Catalog",
+  "description": "Curated collection of host automation tasks for Easy42",
+  "version": "1.0",
+  "tasks": [
+    {
+      "id": "install_vproxy",
+      "title": "Install Vproxy",
+      "description": "Downloads and installs vproxy high-performance HTTP/HTTPS/SOCKS5 proxy server listening on node main IPv4:1080 as a system service.",
+      "category": "Services",
+      "weight": 60,
+      "files": [
+        "run.sh",
+        "status.sh",
+        "task.json"
+      ]
+    }
+  ]
+}
