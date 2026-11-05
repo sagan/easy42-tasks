@@ -5,6 +5,18 @@
   "version": "1.0",
   "tasks": [
     {
+      "id": "install_rclone",
+      "title": "Install Rclone",
+      "description": "Installs or updates the latest stable rclone cloud storage sync tool to /usr/local/bin or /usr/bin.",
+      "category": "Packages",
+      "weight": 50,
+      "files": [
+        "run.sh",
+        "status.sh",
+        "task.json"
+      ]
+    },
+    {
       "id": "install_vproxy",
       "title": "Install Vproxy",
       "description": "Downloads and installs vproxy high-performance HTTP/HTTPS/SOCKS5 proxy server listening on node main IPv4:1080 as a system service.",

@@ -1,0 +1,7 @@
+{
+  "id": "install_rclone",
+  "title": "Install Rclone",
+  "description": "Installs or updates the latest stable rclone cloud storage sync tool to /usr/local/bin or /usr/bin.",
+  "category": "Packages",
+  "weight": 50
+}
