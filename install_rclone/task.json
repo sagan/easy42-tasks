@@ -1,7 +1,11 @@
 {
+  "$schema": "https://raw.githubusercontent.com/sagan/easy42/refs/heads/master/docs/schemas/task.json",
   "id": "install_rclone",
   "title": "Install Rclone",
   "description": "Installs or updates the latest stable rclone cloud storage sync tool to /usr/local/bin or /usr/bin.",
   "category": "Packages",
-  "weight": 50
+  "weight": 50,
+  "selector": {
+    "all": "1"
+  }
 }

@@ -6,20 +6,6 @@ if [ -f "$SCRIPT_DIR/common.sh" ]; then
     . "$SCRIPT_DIR/common.sh"
 fi
 
-# Capture node's original PATH before modifications
-ORIG_PATH="${PATH:-}"
-
-# Ensure standard PATH includes /usr/local/bin and /usr/local/sbin
-case ":$PATH:" in
-    *:/usr/local/bin:*) ;;
-    *) PATH="/usr/local/bin:$PATH" ;;
-esac
-case ":$PATH:" in
-    *:/usr/local/sbin:*) ;;
-    *) PATH="/usr/local/sbin:$PATH" ;;
-esac
-export PATH
-
 # Ensure SUDO is defined if common.sh was not loaded
 if [ -z "${SUDO+x}" ]; then
     SUDO=""
@@ -202,7 +188,7 @@ fi
 # put rclone to /usr/local/bin (if it exists and is in PATH) or /usr/bin
 TARGET_DIR="/usr/bin"
 if [ -d /usr/local/bin ]; then
-    case ":$ORIG_PATH:" in
+    case ":$PATH:" in
         *:/usr/local/bin:*)
             TARGET_DIR="/usr/local/bin"
             ;;

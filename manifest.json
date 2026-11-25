@@ -14,7 +14,10 @@
         "run.sh",
         "status.sh",
         "task.json"
-      ]
+      ],
+      "selector": {
+        "all": "1"
+      }
     },
     {
       "id": "install_vproxy",
@@ -26,7 +29,10 @@
         "run.sh",
         "status.sh",
         "task.json"
-      ]
+      ],
+      "selector": {
+        "all": "1"
+      }
     }
   ]
 }

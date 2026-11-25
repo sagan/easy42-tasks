@@ -4,17 +4,6 @@ if [ -f "$SCRIPT_DIR/common.sh" ]; then
     . "$SCRIPT_DIR/common.sh"
 fi
 
-# Ensure standard PATH includes /usr/local/bin and /usr/local/sbin
-case ":$PATH:" in
-    *:/usr/local/bin:*) ;;
-    *) PATH="/usr/local/bin:$PATH" ;;
-esac
-case ":$PATH:" in
-    *:/usr/local/sbin:*) ;;
-    *) PATH="/usr/local/sbin:$PATH" ;;
-esac
-export PATH
-
 # Detect CPU architecture compatibility with rclone release binaries
 detect_rclone_arch() {
     local arch="${SYSTEM_ARCH:-}"

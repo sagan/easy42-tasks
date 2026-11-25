@@ -1,7 +1,11 @@
 {
+  "$schema": "https://raw.githubusercontent.com/sagan/easy42/refs/heads/master/docs/schemas/task.json",
   "id": "install_vproxy",
   "title": "Install Vproxy",
   "description": "Downloads and installs vproxy high-performance HTTP/HTTPS/SOCKS5 proxy server listening on node main IPv4:1080 as a system service.",
   "category": "Services",
-  "weight": 60
+  "weight": 60,
+  "selector": {
+    "all": "1"
+  }
 }
